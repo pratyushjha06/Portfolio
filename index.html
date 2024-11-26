@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio website of Pratyush Jha">
     <title>Pratyush Jha - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.jpeg">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
@@ -17,14 +17,16 @@
     <header>
         <nav class="navbar">
             <div class="logo">Pratyush Jha Portfolio</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">☰</label>
             <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
 
     <main>
@@ -156,8 +158,12 @@
                             agricultural factors.</p>
                     </div>
                     <div class="achievement-images-group">
-                        <img src="/images/Certificate/intel - crop_recommender.png" alt="Certificate 2A">
-                        <img src="/images/Certificate/intel-bootcamp.png" alt="Certificate 2B">
+                        <div class="img1">
+                            <img src="/images/Certificate/intel - crop_recommender.png" alt="Certificate 2A">
+                        </div>
+                        <div class="img2">
+                            <img src="/images/Certificate/intel-bootcamp.png" alt="Certificate 2B">
+                        </div>
                     </div>
                 </div>
             </div>
