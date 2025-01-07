@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #E0E0E0;
+    background-color: #1E1E1E;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1A1A1A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #BB86FC;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #007BFF;
+}
+
+.menu li a i {
+    margin-right: 8px;
+}
+
+/* Projects Page */
+.projects-section {
+    background: linear-gradient(135deg, #121212, #1A1A1A);
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    text-align: center;
+    color: #BB86FC;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-media img,
+.project-media video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #BB86FC;
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #EAEAEA;
+    line-height: 1.6;
+}
+
+.btn-view-project {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: #BB86FC;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-view-project:hover {
+    background: #9B6ED6;
+    transform: translateY(-3px);
+}
+
+
+#footer{
+    text-align: center;
+    height: 10vh;
+  }
+  
+  #footer p{
+    padding-top: 1rem;
+  }

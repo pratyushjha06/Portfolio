@@ -1,4 +1,4 @@
-const texts = ["CSE Student", "Web Developer","Python Developer", "Image Editor", "Video Editor"];
+const texts = ["CSE Student", "Web Developer","Python Developer", "AI Enthusiast", "Image Editor", "Video Editor" ];
         let count = 0;
         let index = 0;
         let currentText = '';
@@ -60,6 +60,36 @@ document.addEventListener("scroll", () => {
         }
     });
 });
+
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <span class="modal-close">&times;</span>
+        <img src="" alt="Certificate">
+    `;
+    document.body.appendChild(modal);
+
+    const modalImage = modal.querySelector('img');
+    const modalClose = modal.querySelector('.modal-close');
+
+    const certificateImages = document.querySelectorAll('.cert-popup');
+    certificateImages.forEach(image => {
+        image.addEventListener('click', () => {
+            const imgSrc = image.dataset.img;
+            modalImage.src = imgSrc;
+            modal.style.display = 'flex';
+        });
+    });
+
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 
 
 
