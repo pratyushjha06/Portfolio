@@ -34,29 +34,36 @@
                 <h1>Welcome to My Portfolio</h1>
                 <h2 class="typewriter" id="typewriter"></h2>
             </div>
-            <div class="dp">
+            <!-- <div class="dp">
                 <img src="/images/display-pic.png" alt="Display Picture">
-            </div>
-        </section>
+            </div> -->
 
-
-        <section>
-
-            <div class="about">
-                <h3 class="heading" id="about">About Me</h3>
-
+            
+            <div id="about" class="about">
+                <!-- <h3 class="heading" id="about">About Me</h3> -->
                 <div class="about-container">
-                    <p class="about_me" id="aboutText">
-                        Hello! I'm Pratyush Jha, a Computer Science student pursuing a Bachelor's in CSE at Guru Gobind Singh Indraprastha University. Passionate about coding and technology, I specialize in web development, software engineering, and data science.
-<br><br>
-Through academic and freelance projects, I’ve honed my skills in solving real-world problems with innovative software solutions. My journey is driven by continuous learning, collaboration, and a desire to create a meaningful impact in the tech world.
-<br><br>
-Let’s connect and build something incredible together!
-                    </p>
+                    <div class="about-content">
+                        <div class="text-content">
+                            <p class="about_me" id="aboutText">
+                                Hello! I'm Pratyush Jha, a Computer Science student pursuing a Bachelor's in CSE at Guru Gobind Singh Indraprastha University. Passionate about coding and technology, I specialize in web development, software engineering, and data science.
+                                <br><br>
+                                Through academic and freelance projects, I’ve honed my skills in solving real-world problems with innovative software solutions. My journey is driven by continuous learning, collaboration, and a desire to create a meaningful impact in the tech world.
+                                <br><br>
+                                Let’s connect and build something incredible together!
+                            </p>
+                            <button class="resume-btn" onclick="openResume()">View Resume</button>
+                        </div>
+                        <div class="image-container">
+                            <img src="/images/display-pic.png" alt="Pratyush Jha" class="profile-image">
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
+            
+            <div class="resume-popup" id="resumePopup">
+                <span class="close-btn" onclick="closeResume()">&times;</span>
+                <img src="/images/Resume.png" alt="Resume" class="resume-image">
+            </div>
         </section>
 
         <section id="skills" class="skills-section">

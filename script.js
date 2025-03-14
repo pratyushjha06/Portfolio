@@ -45,6 +45,16 @@ document.addEventListener("scroll", () => {
 
 
 
+function openResume() {
+    document.getElementById("resumePopup").style.display = "flex";
+}
+
+function closeResume() {
+    document.getElementById("resumePopup").style.display = "none";
+}
+
+
+
 document.addEventListener("scroll", () => {
     const achievements = document.querySelectorAll(".achievement-item");
     const screenHeight = window.innerHeight;
